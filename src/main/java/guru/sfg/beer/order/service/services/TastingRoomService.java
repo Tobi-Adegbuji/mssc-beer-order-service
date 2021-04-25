@@ -66,6 +66,8 @@ public class TastingRoomService {
                 .beerOrderLines(beerOrderLineSet)
                 .build();
 
+        log.debug("New Order Made: " + beerOrder);
+
         BeerOrderDto savedOrder = beerOrderService.placeOrder(customer.getId(), beerOrder);
 
     }

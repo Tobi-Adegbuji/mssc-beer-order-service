@@ -90,7 +90,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
 
             BeerOrder savedBeerOrder = beerOrderRepository.saveAndFlush(beerOrder);
 
-            log.debug("Saved Beer Order: " + beerOrder.getId());
+            log.debug("New Beer Order Created: " + savedBeerOrder);
 
             //todo impl
           //  publisher.publishEvent(new NewBeerOrderEvent(savedBeerOrder));
